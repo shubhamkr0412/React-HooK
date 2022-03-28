@@ -3,6 +3,7 @@ import {useState} from 'react'
 import './App.css';
 import Usestate from './Components/Usestate';
 import Useeffect from './Components/Useeffect';
+import Usereducer from './Components/Usereducer';
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className="App">
     
-    <Useeffect />
+    <Usereducer />
     </div>
   );
 }
