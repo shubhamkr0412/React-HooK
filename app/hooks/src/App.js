@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from 'react'
 import './App.css';
 import Usestate from './Components/Usestate';
+import Useeffect from './Components/Useeffect';
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
     
-    <Usestate />
+    <Useeffect />
     </div>
   );
 }
