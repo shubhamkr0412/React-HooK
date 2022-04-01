@@ -6,6 +6,15 @@
   height: 40vmin;
   pointer-events: none;
 }
+.circle 
+  {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
