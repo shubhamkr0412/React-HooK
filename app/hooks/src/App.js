@@ -3,17 +3,25 @@ import {useState} from 'react'
 import './App.css';
 import Usestate from './Components/Usestate';
 import Useeffect from './Components/Useeffect';
-import Usereducer from './Components/Usereducer';
+import useReducer from './Components/useReducer';
 
 
-function App() {
-  
-  return (
-    <div className="App">
-    
-   <div className='circle'>Circle</div>
-    </div>
-  );
+const reducer=(state,action)=>{
+  if(action==="Incr"){
+    state=state+1;
+  }
+  if(action==="Decr"){
+    state=state-1;
+  }
 }
 
-export default App;
+
+const App = () => {
+  const intiadata=10;
+  const [state,dispatch]=useReducer(reducer,intiadata)
+  return (
+    <div>App</div>
+  )
+}
+
+export default App
